@@ -11,10 +11,6 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @SpringBootApplication
 @EnableMongoRepositories
 public class PortfolioApplication {
-
-	@Autowired
-	ReferenceRepository referenceRepository;
-
 	public static void main(String[] args) {
 		SpringApplication.run(PortfolioApplication.class, args);
 	}
