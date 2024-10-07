@@ -12,7 +12,7 @@ While each of these sections was needed for my implementation with MongoDB, the 
 
 ## Models
 
-The models act as the data structure for the data stored on the backend, including different attributes and types for each attribute. My implementation includes some specific MongoDB such as `@Document("projects")`, to tell Spring what collection in MongoDB this model represents
+The models act as the data structure for the data stored in the database, including different attributes and types for each attribute. My implementation includes some specific MongoDB such as `@Document("projects")`, to tell Spring what collection in MongoDB this model represents
 
 ## Controllers
 
@@ -22,7 +22,7 @@ The controller is the main REST API endpoint to access the data. The structure o
 
 The service acts as the main interaction method for accessing database values. In my implementation, this includes initialising the MongoDB repositories so functions can be used to access the data from the database. My implementation only makes use of the `.findall()` function, which returns the whole collection for the collection specified, however there are several other default functions defined by the repository, as well as providing a platform to define your own filters and functions
 
-In general, this would be the layer where you actually access the data and return it to the Controller.
+In general, this would be the layer where you actually access the data from the database and return it to the Controller.
 
 ## Repositories
 
